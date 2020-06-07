@@ -9,6 +9,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
@@ -25,7 +29,16 @@
           </div>
         </div>
       </section>
-      You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+      <section class="storage">
+        <div class="storage-items">
+          <p>
+            You’ve used <b>815 GB</b> of your storage
+            <!-- 185 GB Left 0 GB 1000 GB -->
+          </p>
+          <div class="storage-bar"></div>
+          <div class="storage-edges"><span>0 GB</span><span>1000 GB</span></div>
+        </div>
+      </section>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
