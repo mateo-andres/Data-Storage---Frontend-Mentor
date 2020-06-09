@@ -17,7 +17,7 @@ body {
   background-color: hsl(228, 56%, 26%);
   display: flex;
   position: absolute;
-  top: 38%;
+  bottom: 36%;
   left: 20%;
   padding: 40px;
   border-radius: 10px;
@@ -59,30 +59,87 @@ body {
   padding: 20px;
   position: absolute;
   left: 47%;
-  bottom: 38%;
+  bottom: 36%;
   color: hsl(243, 100%, 93%);
-}
-.storage::after {
-  content: "185 GB Left ";
-  background-color: white;
-  color: hsl(229, 57%, 11%);
-  padding: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 10px;
-  position: absolute;
-  top: -60px;
-  right: 30px;
 }
 .storage p {
   font-size: 14px;
   margin: 15px 20px;
 }
+
+.storage .storage-left {
+  display: flex;
+  background: white;
+  color: hsl(229, 7%, 55%);
+  position: absolute;
+  width: 165px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  right: 25px;
+  top: -50px;
+  font-family: "Raleway";
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px;
+}
+.storage .storage-left::after {
+  content: "";
+  /* background-color: brown; */
+  /* width: 50px;
+  height: 50px; */
+  position: absolute;
+  bottom: -22px;
+  right: 0;
+  /* border-left: 10px;
+  border-top: 20px;
+  border-right: 20px;
+  border-bottom: 0; */
+  border-left: 50px solid transparent;
+
+  border-top: 30px solid white;
+}
+
+.storage .storage-left b {
+  font-size: 37px;
+  color: hsl(229, 57%, 11%);
+  margin-right: 20px;
+}
+
 .storage .storage-bar {
+  height: 15px;
+  background-color: hsl(229, 57%, 11%);
+  /* margin: 0 20px; */
+  /* border: 5px solid hsl(229, 57%, 11%); */
+  border-radius: 10px;
+  /* display: flex; */
+  /* align-items: center; */
+  position: relative;
+}
+.storage .progres-bar {
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  height: 12px;
+  height: 11px;
+  width: 70%;
   border-radius: 5px;
-  margin: 0 20px;
+  position: absolute;
+  top: 2.5px;
+  left: 1px;
+  margin-left: 2px;
+}
+.storage .progres-bar::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 0;
 }
 
 .storage .storage-edges {
