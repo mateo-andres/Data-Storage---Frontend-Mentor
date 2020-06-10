@@ -1,0 +1,41 @@
+@media (max-width: 375px) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-size: 100vh;
+    background-position-y: unset;
+  }
+  .all {
+    display: block;
+    margin: 20% 10px;
+  }
+  .brand {
+    position: unset;
+    display: flex;
+    width: 90%;
+    padding-right: 0;
+    margin-bottom: 25px;
+    margin-top: 50%;
+  }
+  .storage {
+    position: unset;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .storage .storage-left {
+    display: flex;
+    justify-self: center;
+    top: unset;
+    bottom: 27%;
+    right: 25%;
+  }
+
+  .storage .storage-left::after {
+    display: none;
+  }
+  .attribution {
+    left: unset;
+    margin: 15px;
+  }
+}
